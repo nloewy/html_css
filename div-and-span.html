@@ -1,0 +1,38 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title> div and span elements</title>
+    </head>
+    <body>
+        <div>*** DIV 1: A<div>
+        <div>*** DIV 2: B***</div>
+        <span>*** SPAN 1: C***</span>
+        <div>*** DIV 3: D
+            <span>*** SPAN 2: E</span>
+           F
+        </div>
+    </body>
+</html>
+
+<!-- content models:
+    1. Block Level Elements
+        - Render to begin on a new line by default
+            - Whenever you specify a block level element, browser places on new line
+        - Allowed to contain inline or block level elements within them
+    2. Inline Elements
+        - Render on the same line (by default)
+        - May only contain other inline elements (CANNOT CONTAIN BLOCK LEVEL ELEMENT AS CONTENT)
+This renders:
+    A 
+    B
+    C
+    D E F 
+
+    This is because div is a block level element, it gets its own line
+    Span however is an inline element, so doesnt cause a mandatory new lin
+
+    Recall if you would try to add a div tag within a span tag, it'd be a nissue.
+    This is bc spans (phrase) are inline and div is block (flow). cannot have a block inside an inline 
+
+-->

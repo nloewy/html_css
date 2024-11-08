@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Links</title>
+    </head>
+    <body>
+        <!-- Main header for the page content -->
+        <h1>Content</h1>
+        
+        <!-- Ordered list of links for easy navigation within the page -->
+
+        <ol>
+            <li><a href="#Internal">Internal Section</a></li> 
+            <li><a href="#External">External Section</a></li> 
+            <li><a href="#InPage">In Page Section</a></li> 
+        </ol>
+
+        <!-- Section for Internal Links with ID "Internal" for in-page linking -->
+        <h2>(Internal) Links</h2>
+        <section id="Internal">
+            <ul>
+                <li>We link with the &lt;a&gt; tag</li>
+                <li>The <code>a</code> tag has an <code>href</code> attribute, which can be an absolute or relative path</li>
+                <li>The <code>a</code> tag has a <code>title</code> attribute, which is useful for screen readers for visually impaired users</li>
+                <li>Content between opening and closing <code>a</code> tags is what is actually displayed</li>
+            </ul> 
+
+            <!-- Example of linking to a file in the same directory -->
+            <p>We can link to a file in the same directory as the HTML file like this:</p>
+            <a href="lists-example.html" title="same-dir-link">Linking to a file in the same directory</a>
+           
+            <!-- Example of a block element (div) inside an anchor tag -->
+            <a href="lists-example.html" title="same-dir-link"> 
+                <div>DIV Linking to a file in the same directory (NOT AN INLINE LINK)</div>
+            </a>
+            
+            <p>Note: The &lt;a&gt; tag is both an inline and block element, so it can contain block elements within it (e.g., if you want a clickable region).</p>
+        </section>
+
+        <!-- Section for External Links with ID "External" for in-page linking -->
+        <h2>(External) External Links</h2>
+        <section id="External">
+            <p>We can link to a file on the web through its domain name:</p>
+            <!-- Example of linking to an external website, opening in a new tab -->
+            <a href="http://www.google.com" title="google-link" target="_blank">Linking to Google</a>
+           
+            <p>Note: The <code>target</code> attribute set to <code>_blank</code> makes the link open in a new window or tab.</p>
+        </section>
+
+        <!-- Section for In-Page Links with ID "InPage" for in-page linking -->
+        <h2>(InPage) In Page Links</h2>
+        <section id="InPage">
+            For In Page Links, we use a # in the href, and it links to the id attribute of a section/header
+            <!-- Content can be added here if needed for in-page link examples -->
+        </section>
+    </body>
+</html>
