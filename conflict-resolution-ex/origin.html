@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Cascade of CSS</title>
+        <link rel="stylesheet" href="external.css">
+        <!-- note external is declared here and says color is red and font size is larger for p elements-->
+        <style>
+        p {
+            color: maroon;
+        }
+        </style>
+    </head>
+    <body>
+        <h1>Origin Example</h1>
+        <p>The rule is simple: last declaration wins.</p> <!-- here we would use the maroon, since it came last. font size is larger too bc it merges-->
+        <p style="color: black;">If there is no conflict, declarations merge into one rule.</p>
+        <!-- here we'd use black because it overrdes. font size still larger-->
+    </body>
+</html>

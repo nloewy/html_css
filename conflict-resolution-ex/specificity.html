@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Inheritance in CSS</title>
+        <style>
+        header.navigation p {
+            color: blue; /* No style tag, no Id, uses a class, 2 elements */
+        }
+        p.blurb {  /* No style tag, no Id, uses a class, 1 elements */
+            color: red;
+        }
+        p {  /* No style tag, no Id, no class, 1 element */
+            color: green !important; /* BECAUSE WE USE IMPORTANT, IT OVERRIDES AND MAKE IT GREEN
+            TYPICALLY NOT THE BEST PRACTICE*/
+        }
+        </style>
+    </head>
+    <body>
+        <header class="navigation">
+            <p class="blurb"> The most specific selector combination wins.</p> <!-- the first one wins-->
+            <!-- this is how it knows which one to use -->
+        </header>
+    </body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+    <html>
+        <head>
+            <meta charset="utf-8">
+            <title>Inheritance in CSS</title>
+            <style>
+            body {
+                color: red;
+                text-align: center;
+                font-family: Helvetica;
+            }
+            p {
+                color: blue;
+            }
+            </style>
+        </head>
+        <!-- we have a document object model tree-->
+        <!-- if we specify property on some element, it applies to it's children and grand children as well-->
+            <!-- essentially if we apply a property on a body tag, it will be true for every child of the body tag as well-->
+        <body>
+            <h1>Cascade of CSS Example</h1>
+            <h2>Subheading 1</h2>
+            <!-- the ps will appear blue as they are overriden due to origin -->
+            <p>Inheritence allows us to write more global styles on parent elements and then "fine-tune" the styles for some of the child elements as needed. Such approach makes writing CSS very efficient.</p>
+            <h2 style="color: green;">Subheading 2</h2> <!-- overriden due to origin-->
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto ad excepturi eveniet odio, fuga nam quidem reprehenderit placeat commodi? In laudantium cum nam quod vitae at eligendi consequatur sequi cumque.</p>
+        </body>
+     </html>

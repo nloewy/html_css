@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Pseudo Class Selector</title>
+        <style>
+
+        header li {
+            list-style: none
+        }
+
+        a:link, a:visited {
+            text-decoration: none;
+            background-color: green;
+            border: 1px, solid blue;
+            color: black;
+            display: block;
+            width: 200px;
+            text-align:center;
+            margin-bottom:1px;
+        }
+        a:hover, a:active {
+            background-color: red;
+            color:purple;
+        }
+        header li:nth-child(3) {
+            font-size: 24px;
+        }
+
+        section div:nth-child(odd) {
+            background-color: gray;
+        }
+
+        section div:nth-child(3):hover {
+            background-color: green;
+        }
+        
+        </style>
+        <!-- grouping pseudoclass selectors together for links and visited links-->
+        <!-- a can be inline or block, so we can choose to display it as a block-->
+    
+        <!-- hover and active refering to while hovering, on clicked-->
+        <!-- the hover and active still keep their link behavior-->
+    
+        <!-- nth child selector can make a the nth element of a parent element stand out. in our
+        example it'll make the 3rd child stand out -->
+    
+        <!-- can even do things like odd to do every other element-->
+    </head>
+    <h1>Pseudo Class Selector</h1>
+    <header>
+        <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="http://goo.gl/V0Wl6s" target="_blank">Angular JS Course</a></li>
+            <li><a href="http://www.facebook.com/CourseEraWebDev" target="_blank">Facebook Fan Page</a></li>
+        </ul>
+    </header>
+    <section>
+        <div>DIV1</div>
+        <div>DIV2</div>
+        <div>DIV3</div>
+        <div>DIV4</div>
+        <div>DIV5</div>
+        <div>DIV6</div>
+        <div>DIV7</div>
+        <div>DIV8</div>
+    </section>
+</html>
+
+To define a pseudoclass selector,
+use a predefined class name, then a colon, then the pseudo Selector
+
+We cover 5 pseudo-class selectors:
+1. :link
+2. :visited
+3. :hover
+4. :active
+5. :nth-child 

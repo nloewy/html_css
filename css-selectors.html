@@ -1,0 +1,54 @@
+!<DOCTYPE html>
+ <html>
+    <head>
+        <meta charset="utf-8">
+        <title>CSS Selectors</title>
+    </head>
+    <body>
+        <h1>CSS Selectors</h1>
+        <h2>About CSS Selectors</h2>
+        <p> CSS Selectors are used to determine which html elements or set of elements
+            to apply the CSS declarations too. The browser uses the selector API to traverse
+            the document element model and pick out the elements matching the selector
+        </p>
+        <p>
+            It's good to be able to write a good selector, as it's also used in javascript as well
+        </p>
+        <h2>Types of Selectors</h2>
+        <ol>
+            <li>Element Selector</li>
+                <div>Says that every element of that type should be styled that way. For example
+                    `p{color:blue}`means every paragraph should be colored blue. Div elements 
+                    however would not be affected by the rule
+                </div>
+            <li>Class Selector</li>
+                <div>Formatted by `.name` </div>
+                <div> 
+                    ```css
+                    .blue {
+                        color: blue;
+                    }
+                    ```
+                </div>
+                <div>
+                    The above makes a class called blue. Then for each element you
+                    want the `blue` class to apply to, we give it that attribute, as shown below
+                </div>
+                <div>
+                    &lt; pclass = "blue" &gt; ... &lt;/p &gt;
+                </div>
+            <li>ID Selector</li>
+                <div>Specify an ID selector by doing a # sign and then the value of an id of an element in the html document </div>
+                <div>Example writing an ID selector: </div>
+                <div>#name { color:blue;}</div>
+                <div>Example using the id selector</div>
+                <div>&lt; div id="name" &gt; ... &lt;/div&gt;</div>
+        </ol>
+        <div>
+            We can group selectors by making them many types of selectors:
+        </div>
+        <div>
+            Ex: `div, .blue { color:blue; }
+        </div>
+    </body>
+</html>
